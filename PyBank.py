@@ -50,7 +50,7 @@ avg_change=(float(sum_change/(total_rows-1)))
 #use round & float to properly display avg_change as currency to 2 decimal points:
 avg_change=(round(float(avg_change),2))
 
-#write to .txt file 
+#write to .txt file & print on terminal 
 OUTPUT_PATH=os.path.join("pybank_analysis.txt")
 
 with open(OUTPUT_PATH,'w') as textfile: 
